@@ -23,7 +23,8 @@ if(b != undefined){
 
 app.get('/', (req, res) => {
 
-res.sendFile('R:\\API-Receber-Info\\index..html')
+res.sendFile(require('path').join(__dirname, 'index.html'));
+
 });
 
 app.listen(port);
